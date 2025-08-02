@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FinanceO</title>
+  <link rel="icon" href="Logo_O-01 1.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      color: #000;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    nav a {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #000;
+  color: #f87102;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #111;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+    .auth-buttons button {
+      margin-left: 15px;
+      padding: 8px 16px;
+      border-radius: 6px;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .sign-up {
+      background-color: transparent;
+    }
+
+    .sign-in {
+      background-color: #111;
+      color: white;
+    }
+
+    .hero {
+       display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  flex-wrap: wrap;
+  gap: 40px;
+  z-index: 0;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      margin-bottom: 30px;
+      color: #555;
+    }
+
+    .hero-buttons button {
+      padding: 10px 20px;
+      margin-right: 15px;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background-color: #111;
+      color: white;
+      }
+      button {
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover,
+.sign-in:hover {
+  background-color: #ff7505;
+  color: #ffffff;
+}
+
+    .btn-secondary {
+      background-color: transparent;
+      border: 1px solid #999;
+    }
+
+    .btn-secondary:hover,
+.sign-up:hover {
+  background-color: #eee;
+  border-color: #666;
+  color: #000;
+}
+
+    .stats {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      font-size: 20px;
+      gap: 40px;
+      text-align: center;
+    }
+
+    .features {
+    display: flex;
+  justify-content: space-around;
+  background-color: #000;
+  color: white;
+  padding: 60px 30px;
+  text-align: center;
+  margin-top: -80px; /* This makes it rise upward and overlap the white section */
+  position: relative;
+  z-index: 10;
+    }
+
+    .feature-item {
+      max-width: 400px;
+    }
+
+    .feature-icon {
+      background-color: #ff7505;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      color: black;
+    }
+
+    .feature-icon:hover {
+  background-color: #fff;
+  color: #c55a02;
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(247, 78, 0, 0.4);
+}
+.image-wrapper {
+  position: relative;
+  width: 600px; /* set based on your needs */
+  height: 600px; /* set based on your needs */
+  margin: 0 right; /* center the image wrapper */
+}
+
+.img-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.img-front {
+  position: absolute;
+  bottom: 30px; /* adjust based on your design */
+  left: -40px; /* shift to side if needed */
+  width: 80%;
+  z-index: 2;
+}
+
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">FinanceO</div>
+    <nav>
+      <a href="#">Demos</a>
+      <a href="#">About</a>
+      <a href="#">Blog</a>
+      <a href="#">Pages</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="auth-buttons">
+      <button class="sign-up">Sign Up</button>
+      <button class="sign-in">Sign In</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>The next generation payment method.</h1>
+      <p>Lorem ipsum dolor sit amet consectetur. Aliquam posuere arcu vel adipiscing. Malesuada ornare non sagittis ornare neque.</p>
+      <div class="hero-buttons">
+        <button class="btn-primary">Get Your Card</button>
+        <button class="btn-secondary">Talk To Expert</button>
+      </div>
+      <div class="stats">
+        <div><strong>2480</strong><br>Cards Delivered</div>
+        <div><strong>$2M</strong><br>Transaction Completed</div>
+      </div>
+    </div>
+    <div class="image-wrapper">
+  <img src="Image_2.png" class="img-back"></div>
+  </section>
+
+  <section class="features">
+    <div class="feature-item">
+      <div class="feature-icon">⏱</div>
+      <h3>Solved Problem Realtime</h3>
+      <p>Lorem ipsum dolor sit amet consectetur. Aliquam posuere arcu vel adipiscing. Malesuada ornare non sagittis ornare neque.</p>
+    </div>
+    <div class="feature-item">
+      <div class="feature-icon">🔒</div>
+      <h3>Secured Payments</h3>
+      <p>Lorem ipsum dolor sit amet consectetur. Aliquam posuere arcu vel adipiscing. Malesuada ornare non sagittis ornare neque.</p>
+    </div>
+    <div class="feature-item">
+      <div class="feature-icon">🎧</div>
+      <h3>24x7 Customer Support</h3>
+      <p>Lorem ipsum dolor sit amet consectetur. Aliquam posuere arcu vel adipiscing. Malesuada ornare non sagittis ornare neque.</p>
+    </div>
+  </section>
+</body>
+
+</html>
